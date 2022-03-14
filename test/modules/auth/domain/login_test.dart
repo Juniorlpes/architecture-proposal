@@ -5,7 +5,7 @@ import 'package:architecture_proposal/modules/auth/domain/usecases/login.dart';
 import 'package:dartz/dartz.dart';
 import 'package:flutter_test/flutter_test.dart';
 
-class LoginRepositoryMock implements ILoginRepository {
+class LoginRepositoryMock implements LoginRepository {
   @override
   Future<Either<LoginFailure, User>> login(
       {required String email, required String password}) async {
@@ -14,8 +14,8 @@ class LoginRepositoryMock implements ILoginRepository {
 }
 
 void main() {
-  final ILoginRepository repository = LoginRepositoryMock();
-  final login = Login(repository);
+  final LoginRepository repository = LoginRepositoryMock();
+  final login = LoginImp(repository);
 
   test('Login successfully', () async {
     var result = await login(email: 'email@test.com', password: '12345');

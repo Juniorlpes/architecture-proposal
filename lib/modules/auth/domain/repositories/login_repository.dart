@@ -2,7 +2,7 @@ import 'package:architecture_proposal/modules/auth/domain/entities/login_failure
 import 'package:architecture_proposal/modules/auth/domain/entities/user.dart';
 import 'package:dartz/dartz.dart';
 
-abstract class ILoginRepository {
+abstract class LoginRepository {
   Future<Either<LoginFailure, User>> login(
       {required String email, required String password});
 }

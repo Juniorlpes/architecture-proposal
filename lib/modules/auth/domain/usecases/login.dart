@@ -3,17 +3,17 @@ import 'package:architecture_proposal/modules/auth/domain/entities/user.dart';
 import 'package:architecture_proposal/modules/auth/domain/repositories/login_repository.dart';
 import 'package:dartz/dartz.dart';
 
-abstract class ILogin {
+abstract class Login {
   Future<Either<LoginFailure, User>> call({
     required String email,
     required String password,
   });
 }
 
-class Login implements ILogin {
-  final ILoginRepository _loginRepository;
+class LoginImp implements Login {
+  final LoginRepository _loginRepository;
 
-  Login(this._loginRepository);
+  LoginImp(this._loginRepository);
 
   @override
   Future<Either<LoginFailure, User>> call({

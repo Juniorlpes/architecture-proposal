@@ -2,7 +2,7 @@
 enum RequestErrors { ServerError, ConnectionError, Unauthorized, NotFound }
 
 ///This class has commoms API services errors to avoid repetition on modules failures
-abstract class GeneralAppFailure {
+abstract class GeneralAppFailure implements Exception {
   String? message;
   RequestErrors? requestErrors;
 
