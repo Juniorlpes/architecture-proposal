@@ -1,3 +1,4 @@
+import 'package:architecture_proposal/modules/auth/data/models/type_user_dto.dart';
 import 'package:architecture_proposal/modules/auth/domain/entities/enums/type_user.dart';
 import 'package:architecture_proposal/modules/auth/domain/entities/user.dart';
 
@@ -29,9 +30,7 @@ class UserModel extends User {
     final json = <String, dynamic>{};
     json['name'] = name;
     json['email'] = email;
-    json['typeUser'] = typeUser == TypeUser.Common ? 10 : 20;
+    json['typeUser'] = typeUserJsonValues[typeUser];
     return json;
   }
 }
-
-const typeUserJsonValues = {TypeUser.Common: 10, TypeUser.Admin: 20};

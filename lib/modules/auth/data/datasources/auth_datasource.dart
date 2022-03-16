@@ -26,7 +26,7 @@ class AuthDatasourceImpl implements AuthDatasource {
     if (result.success) {
       return result.data;
     } else {
-      throw OtherLoginError()
+      throw LoginFailure()
         ..message = result.failure?.message
         ..requestErrors = result.failure?.requestErrors;
       //request errors (status code) could be inputed here or in webservice
