@@ -17,20 +17,20 @@ abstract class WebService {
   //Get a model from webService
   Future<WebResponse<T>> getModel<T>(
     String path,
-    T Function(dynamic) parse, {
+    T Function(Map<String, dynamic> json) parse, {
     //usually this dynamic will be a Map<String, dynamic>?
     Map<String, dynamic>? query, //if you are using http service
   });
 
   //Get a list model from webService
   Future<WebResponse<List<T>>> getList<T>(
-      String path, T Function(dynamic) parse);
+      String path, T Function(Map<String, dynamic> json) parse);
 
   //Post a data and receive a model
   Future<WebResponse<T>> postModel<T>(
-      String path, dynamic body, T Function(dynamic) parse);
+      String path, dynamic body, T Function(Map<String, dynamic> json) parse);
 
   //Post a data and receive a list model
   Future<WebResponse<List<T>>> postList<T>(
-      String path, dynamic body, T Function(dynamic) parse);
+      String path, dynamic body, T Function(Map<String, dynamic> json) parse);
 }

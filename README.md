@@ -12,6 +12,7 @@ It is a basic and continuous [flutter](https://flutter.dev) project to save and 
 
 ## Todos
 
+    [] finish base-proposal branch and unit tests
     [] finish readme
-    [] create real world branch
-    [] (maybe in future) replace flutter modular, see eventBus, implementation webservice
+    [] create real world branch, implements webService
+    [] (maybe in future) replace flutter modular, see eventBus, microframeworks

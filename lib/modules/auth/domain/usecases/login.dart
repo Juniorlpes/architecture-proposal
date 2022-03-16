@@ -1,6 +1,6 @@
 import 'package:architecture_proposal/modules/auth/domain/entities/login_failures.dart';
 import 'package:architecture_proposal/modules/auth/domain/entities/user.dart';
-import 'package:architecture_proposal/modules/auth/domain/repositories/login_repository.dart';
+import 'package:architecture_proposal/modules/auth/domain/repositories/auth_repository.dart';
 import 'package:dartz/dartz.dart';
 
 abstract class Login {
@@ -10,10 +10,10 @@ abstract class Login {
   });
 }
 
-class LoginImp implements Login {
-  final LoginRepository _loginRepository;
+class LoginImpl implements Login {
+  final AuthRepository _loginRepository;
 
-  LoginImp(this._loginRepository);
+  LoginImpl(this._loginRepository);
 
   @override
   Future<Either<LoginFailure, User>> call({
