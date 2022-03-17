@@ -1,3 +1,4 @@
+import 'package:architecture_proposal/modules/auth/presenter/pages/auth_page.dart';
 import 'package:flutter/material.dart';
 
 void main() {
@@ -12,9 +13,7 @@ class MyApp extends StatelessWidget {
       theme: ThemeData(
         primarySwatch: Colors.blue,
       ),
-      home: Scaffold(
-        appBar: AppBar(),
-      ),
+      home: AuthPage(),
     );
   }
 }
