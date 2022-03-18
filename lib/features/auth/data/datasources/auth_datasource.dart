@@ -1,5 +1,5 @@
-import 'package:architecture_proposal/modules/auth/data/models/user_model.dart';
-import 'package:architecture_proposal/modules/auth/domain/entities/login_failures.dart';
+import 'package:architecture_proposal/features/auth/data/models/user_model.dart';
+import 'package:architecture_proposal/features/auth/domain/entities/login_failures.dart';
 import 'package:architecture_proposal/shared/data/web_service.dart';
 
 abstract class AuthDatasource {

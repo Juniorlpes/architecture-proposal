@@ -1,6 +1,6 @@
-import 'package:architecture_proposal/modules/auth/data/models/type_user_dto.dart';
-import 'package:architecture_proposal/modules/auth/domain/entities/enums/type_user.dart';
-import 'package:architecture_proposal/modules/auth/domain/entities/user.dart';
+import 'package:architecture_proposal/features/auth/data/models/type_user_dto.dart';
+import 'package:architecture_proposal/features/auth/domain/entities/enums/type_user.dart';
+import 'package:architecture_proposal/features/auth/domain/entities/user.dart';
 
 //This class could be called UserDto instead UserModel
 //This is a single example dto. Could be improved

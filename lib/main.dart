@@ -1,4 +1,4 @@
-import 'package:architecture_proposal/modules/auth/presenter/pages/auth_page.dart';
+import 'package:architecture_proposal/features/auth/presenter/pages/auth_page.dart';
 import 'package:flutter/material.dart';
 
 void main() {

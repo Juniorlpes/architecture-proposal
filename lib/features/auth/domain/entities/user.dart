@@ -1,4 +1,4 @@
-import 'package:architecture_proposal/modules/auth/domain/entities/enums/type_user.dart';
+import 'package:architecture_proposal/features/auth/domain/entities/enums/type_user.dart';
 
 class User {
   String name;
