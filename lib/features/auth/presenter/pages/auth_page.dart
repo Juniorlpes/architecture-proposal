@@ -11,7 +11,7 @@ class AuthPage extends StatefulWidget {
 }
 
 class _AuthPageState extends State<AuthPage> {
-  final controller = AuthController(AuthBinds.instance.loginUsecase);
+  final controller = AuthController(AuthBinds().loginUsecase);
 
   final emailController = TextEditingController();
   final passwordController = TextEditingController();

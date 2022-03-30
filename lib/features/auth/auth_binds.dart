@@ -5,15 +5,15 @@ import 'package:architecture_proposal/features/auth/domain/usecases/login.dart';
 import 'package:architecture_proposal/shared/data/web_service_impl.dart';
 
 class AuthBinds {
-  AuthBinds._() {
-    _authDatasource = AuthDatasourceImpl(WebServiceImpl());
-    _authRepository = AuthRepositoryImpl(_authDatasource);
-    loginUsecase = LoginImpl(_authRepository);
-  }
-  static final AuthBinds instance = AuthBinds._();
-  factory AuthBinds() => instance;
-
   late final AuthDatasource _authDatasource;
   late final AuthRepository _authRepository;
-  late final Login loginUsecase;
+  late final Login _loginUsecase;
+
+  AuthBinds() {
+    _authDatasource = AuthDatasourceImpl(WebServiceImpl());
+    _authRepository = AuthRepositoryImpl(_authDatasource);
+    _loginUsecase = LoginImpl(_authRepository);
+  }
+
+  Login get loginUsecase => _loginUsecase;
 }
