@@ -13,6 +13,6 @@ It is a basic and continuous [flutter](https://flutter.dev) project to save and 
 ## Todos
 
     [x] finish base-proposal branch implementation
-    [] Unit tests base-proposal branch
+    [x] Unit tests base-proposal branch
     [] finish readme
     [] create real world branch
