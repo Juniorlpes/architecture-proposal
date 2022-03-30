@@ -16,7 +16,7 @@ class UserModel extends User {
         );
 
   factory UserModel.fromJson(Map<String, dynamic> json) => UserModel(
-        name: json['name'],
+        name: json['name'] ?? '',
         email: json['email'],
         typeUser: typeUserJsonValues.entries
             .firstWhere(

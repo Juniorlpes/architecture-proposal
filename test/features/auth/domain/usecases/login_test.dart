@@ -1,3 +1,4 @@
+import 'package:architecture_proposal/features/auth/domain/entities/enums/type_user.dart';
 import 'package:architecture_proposal/features/auth/domain/entities/user.dart';
 import 'package:architecture_proposal/features/auth/domain/entities/login_failures.dart';
 import 'package:architecture_proposal/features/auth/domain/repositories/auth_repository.dart';
@@ -9,7 +10,7 @@ class LoginRepositoryMock implements AuthRepository {
   @override
   Future<Either<LoginFailure, User>> login(
       {required String email, required String password}) async {
-    return right(User(name: 'Peter', email: 'peter@test.com'));
+    return right(User(name: 'Bento', email: email, typeUser: TypeUser.Common));
   }
 }
 
@@ -21,6 +22,8 @@ void main() {
     var result = await login(email: 'email@test.com', password: '12345');
 
     expect(result.isRight(), true);
+    User? user = result.fold((l) => null, id); //id = (r) => r
+    expect(user?.name, 'Bento');
   });
 
   test('Invalid email', () async {
