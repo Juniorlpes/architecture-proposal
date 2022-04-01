@@ -1,14 +1,14 @@
 # Architecture Proposal
 
-It is a basic and continuous [flutter](https://flutter.dev) project to save and present my clean architecture proposal
+It is a basic and continuous [flutter](https://flutter.dev) project to save and present my clean architecture proposal.
 
 ## Overview
 
 Well, this proposal was based on [Reso Coder Proposal](https://resocoder.com/flutter-clean-architecture-tdd/) and [Flutterando proposal](https://github.com/Flutterando/Clean-Dart). I did some changes/improvements in both proposal considering some necessities, and of course, respecting the SOLID principles and the Clean Code.
 
-This project has two branchs. 
-The base-proposal branch is the clean proposal, it's just used only Dart/Flutter code without any external package, except the [dartz](https://pub.dev/packages/dartz) package that only provide useful dart classes. (see [Either](https://pub.dev/documentation/dartz/latest/dartz/Either-class.html) class)
-The [...] branch is a "real world branch" where I use some external packages to support our daily development work, highlighting the [flutter_modular](https://pub.dev/packages/flutter_modular) package that manages the app's routes and binds, separating the features into modules like the Angular framework (Javascript).
+This project has two branchs. <br />
+The base-proposal branch is the clean proposal, it's just used only Dart/Flutter code without any external package, except the [dartz](https://pub.dev/packages/dartz) package that only provide useful dart classes. (see [Either](https://pub.dev/documentation/dartz/latest/dartz/Either-class.html) class)<br />
+The real-world branch is a "real world branch" where I use some external packages to support our daily development work, highlighting the [flutter_modular](https://pub.dev/packages/flutter_modular) package that manages the app's routes and binds, separating the features into modules like the Angular framework (Javascript).
 
 ## Explain
 
