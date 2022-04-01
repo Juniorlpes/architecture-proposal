@@ -16,13 +16,13 @@ Here is the Uncle Bob's Clean Architecture Proposal
 
 ![image info](./readme_assets/CleanArchitecture.png)
 
-Look for the divisions and the arrows representing the dependency flow.
+Note that the divisions and the arrows representing the dependency flow.
 
 I follow the [Reso Coder](https://resocoder.com/) dividing the features in three layers according the diagram:
 
 ![image info](./readme_assets/Clean-Architecture-Flutter-Diagram.png)
 
-All features in the proposal follow the diagram's divisions.
+All features in my proposal follow the diagram's divisions.
 
 A big difference between my proposal and the two anothers typed on overview (has some little changes I'll not explain here) is the WebService class I putted on app's core (shared folder). This class is important because it will contains the external package injected into it to offers basic operations to app get remote data, so, if you want or need change the external package (dio, http, firebase), you will change the webService class and not in all datasources inside the modules.
 
