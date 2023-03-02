@@ -1,4 +1,4 @@
-import 'package:architecture_proposal/shared/domain/general_app_failure.dart';
+import 'package:architecture_proposal/shared/entities/general_app_failure.dart';
 
 class WebResponse<T> {
   late T data;
@@ -13,7 +13,7 @@ class WebResponse<T> {
 ///This is importante because it will know your external package (http, dio, firebase, etc) and your application will know this class.
 ///If you need change your external package, service or protocol, you'll only change this class.
 ///You must adapt this class to your necessity/reality
-abstract class WebService {
+abstract class RestService {
   //Get a model from webService
   Future<WebResponse<T>> getModel<T>(
     String path,

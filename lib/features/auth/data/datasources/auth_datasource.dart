@@ -1,13 +1,13 @@
+import 'package:architecture_proposal/core/rest_service/rest_service.dart';
 import 'package:architecture_proposal/features/auth/data/models/user_model.dart';
 import 'package:architecture_proposal/features/auth/domain/entities/login_failures.dart';
-import 'package:architecture_proposal/shared/data/web_service.dart';
 
 abstract class AuthDatasource {
   Future<UserModel> login({required String email, required String password});
 }
 
 class AuthDatasourceImpl implements AuthDatasource {
-  final WebService _webService;
+  final RestService _webService;
 
   AuthDatasourceImpl(this._webService);
 

@@ -1,6 +1,6 @@
 import 'package:architecture_proposal/features/auth/auth_binds.dart';
 import 'package:architecture_proposal/features/auth/presenter/controllers/auth_controller.dart';
-import 'package:architecture_proposal/shared/domain/request_status.dart';
+import 'package:architecture_proposal/shared/enums/request_status.dart';
 import 'package:flutter/material.dart';
 
 class AuthPage extends StatefulWidget {

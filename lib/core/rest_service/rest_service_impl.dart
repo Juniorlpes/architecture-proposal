@@ -1,7 +1,7 @@
-import 'package:architecture_proposal/shared/data/web_service.dart';
-import 'package:architecture_proposal/shared/domain/general_app_failure.dart';
+import 'package:architecture_proposal/core/rest_service/rest_service.dart';
+import 'package:architecture_proposal/shared/entities/general_app_failure.dart';
 
-class WebServiceImpl implements WebService {
+class RestServiceImpl implements RestService {
   //Dio dio.... (example external service)
 
   //In a real project, here would have a try catch to return a complet WebResponse with the "right" error

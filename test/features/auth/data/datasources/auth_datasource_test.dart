@@ -1,9 +1,9 @@
+import 'package:architecture_proposal/core/rest_service/rest_service.dart';
 import 'package:architecture_proposal/features/auth/data/datasources/auth_datasource.dart';
-import 'package:architecture_proposal/shared/data/web_service.dart';
-import 'package:architecture_proposal/shared/domain/general_app_failure.dart';
+import 'package:architecture_proposal/shared/entities/general_app_failure.dart';
 import 'package:flutter_test/flutter_test.dart';
 
-class WebServiceMock implements WebService {
+class WebServiceMock implements RestService {
   @override
   Future<WebResponse<List<T>>> getList<T>(
       String path, T Function(Map<String, dynamic> json) parse) async {

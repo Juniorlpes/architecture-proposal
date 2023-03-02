@@ -28,9 +28,3 @@ A big difference between my proposal and the two anothers typed on overview (has
 
 The WebService class was based on [restbase](https://pub.dev/packages/restbase) package (this package just work with [Dio](https://pub.dev/packages/dio) package).
 
-## Todos
-
-    [x] finish base-proposal branch implementation
-    [x] Unit tests base-proposal branch
-    [x] finish readme
-    [x] create real world branch

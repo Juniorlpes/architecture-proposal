@@ -1,4 +1,4 @@
-import 'package:architecture_proposal/shared/domain/general_app_failure.dart';
+import 'package:architecture_proposal/shared/entities/general_app_failure.dart';
 
 class LoginFailure extends GeneralAppFailure {
   LoginFailure({String? message}) : super(message: message);
