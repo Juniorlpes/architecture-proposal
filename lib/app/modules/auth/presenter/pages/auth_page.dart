@@ -1,5 +1,5 @@
 import 'package:architecture_proposal/app/modules/auth/presenter/controllers/auth_controller.dart';
-import 'package:architecture_proposal/shared/domain/request_status.dart';
+import 'package:architecture_proposal/shared/enums/request_status.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_mobx/flutter_mobx.dart';
 import 'package:flutter_modular/flutter_modular.dart';
