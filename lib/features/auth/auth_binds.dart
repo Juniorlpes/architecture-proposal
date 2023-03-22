@@ -5,7 +5,8 @@ import 'package:architecture_proposal/features/auth/domain/repositories/auth_rep
 import 'package:architecture_proposal/features/auth/domain/usecases/login.dart';
 
 ///Here I just show the dependency injection.
-///This module/feature will use the Login (Usecase/method) where the dependency was injected
+///This module/feature will use the Login (Usecase/method) where the dependency was injected.
+///It might just be a function to initialize all dependencies
 class AuthBinds {
   late final AuthDatasource _authDatasource;
   late final AuthRepository _authRepository;
