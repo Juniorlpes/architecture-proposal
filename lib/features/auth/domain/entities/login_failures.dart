@@ -4,8 +4,9 @@ class LoginFailure extends GeneralAppFailure {
   LoginFailure({String? message}) : super(message: message);
 }
 
-class InvalidEmail extends LoginFailure {
-  InvalidEmail({String? message}) : super(message: message ?? 'invalid email');
+class InvalidUserName extends LoginFailure {
+  InvalidUserName({String? message})
+      : super(message: message ?? 'invalid email');
 }
 
 class InvalidPassword extends LoginFailure {

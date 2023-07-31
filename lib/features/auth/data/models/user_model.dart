@@ -6,18 +6,15 @@ import 'package:architecture_proposal/features/auth/domain/entities/user.dart';
 //This is a single example dto. Could be improved
 class UserModel extends User {
   UserModel({
-    required String name,
-    required String email,
+    required String userName,
     TypeUser? typeUser,
   }) : super(
-          email: email,
-          name: name,
+          userName: userName,
           typeUser: typeUser ?? TypeUser.Common,
         );
 
   factory UserModel.fromJson(Map<String, dynamic> json) => UserModel(
-        name: json['name'] ?? '',
-        email: json['email'],
+        userName: json['userName'],
         typeUser: typeUserJsonValues.entries
             .firstWhere(
               (item) => item.value == json['typeUser'],
@@ -28,8 +25,7 @@ class UserModel extends User {
 
   Map<String, dynamic> toJson() {
     final json = <String, dynamic>{};
-    json['name'] = name;
-    json['email'] = email;
+    json['userName'] = userName;
     json['typeUser'] = typeUserJsonValues[typeUser];
     return json;
   }

@@ -37,7 +37,7 @@ class _AuthPageState extends State<AuthPage> {
             TextField(
               controller: emailController,
               decoration: InputDecoration(
-                labelText: 'E-mail',
+                labelText: 'UserName',
                 border: OutlineInputBorder(),
               ),
             ),
@@ -54,10 +54,10 @@ class _AuthPageState extends State<AuthPage> {
               onPressed: controller.loginStatus == RequestStatus.Loading
                   ? null
                   : () => controller.login(
-                      email: emailController.text,
+                      userName: emailController.text,
                       password: passwordController.text),
               style: ElevatedButton.styleFrom(
-                primary: Theme.of(context).primaryColor,
+                backgroundColor: Theme.of(context).primaryColor,
               ),
               child: Text(
                 'Login',
