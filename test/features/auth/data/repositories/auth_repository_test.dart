@@ -8,11 +8,11 @@ import 'package:architecture_proposal/features/auth/domain/repositories/auth_rep
 class AuthDatasourceMock implements AuthDatasource {
   @override
   Future<UserModel> login(
-      {required String email, required String password}) async {
-    if (!email.contains('bento')) {
+      {required String userName, required String password}) async {
+    if (!userName.contains('bento')) {
       throw UnknownEmailOrPassword(); //Or a LoginFailure
     }
-    return UserModel(email: email, name: 'Bento');
+    return UserModel(userName: 'Bento');
   }
 }
 
@@ -27,14 +27,14 @@ void main() {
 
     test('right case', () async {
       final result = await authRepository.login(
-          email: 'bento@test.com', password: '123456');
+          userName: 'bento@test.com', password: '123456');
 
       expect(result.isRight(), true);
     });
 
     test('error case', () async {
       final result = await authRepository.login(
-          email: 'other@test.com', password: '123456');
+          userName: 'other@test.com', password: '123456');
 
       expect(result.isRight(), false);
       expect(result.isLeft(), true);

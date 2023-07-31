@@ -3,7 +3,7 @@ import 'package:architecture_proposal/features/auth/domain/entities/user.dart';
 import 'package:flutter_test/flutter_test.dart';
 
 void main() {
-  var userModel = UserModel(name: 'Bento', email: 'bento@test.com');
+  var userModel = UserModel(userName: 'bento@test.com');
 
   group('UserModelTests', () {
     test('UserModel is User', () {
@@ -11,19 +11,18 @@ void main() {
     });
 
     test('From Json', () {
-      userModel =
-          UserModel.fromJson({'email': 'bento2@test.com', 'name': 'Bento2'});
+      userModel = UserModel.fromJson({'userName': 'bento2@test.com'});
 
       expect(userModel, isA<User>());
-      expect(userModel.name, 'Bento2');
+      expect(userModel.userName, 'bento2@test.com');
     });
 
     test('To Json', () {
-      userModel = UserModel(name: 'Bento3', email: 'bento3@test.com');
+      userModel = UserModel(userName: 'bento3@test.com');
 
       final json = userModel.toJson();
 
-      expect(json['name'], 'Bento3');
+      expect(json['userName'], 'bento3@test.com');
     });
   });
 }

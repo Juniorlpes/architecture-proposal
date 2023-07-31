@@ -3,7 +3,7 @@ import 'package:architecture_proposal/features/auth/data/models/user_model.dart'
 import 'package:architecture_proposal/features/auth/domain/entities/login_failures.dart';
 
 abstract class AuthDatasource {
-  Future<UserModel> login({required String email, required String password});
+  Future<UserModel> login({required String userName, required String password});
 }
 
 class AuthDatasourceImpl implements AuthDatasource {
@@ -13,11 +13,11 @@ class AuthDatasourceImpl implements AuthDatasource {
 
   @override
   Future<UserModel> login(
-      {required String email, required String password}) async {
+      {required String userName, required String password}) async {
     final result = await _webService.postModel<UserModel>(
       'api/login',
       {
-        'email': email,
+        'userName': userName,
         'password': password,
       },
       (data) => UserModel.fromJson(data),

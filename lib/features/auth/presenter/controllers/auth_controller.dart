@@ -14,11 +14,12 @@ class AuthController extends ChangeNotifier {
   LoginFailure? loginFailure;
   User? user;
 
-  Future<void> login({required String email, required String password}) async {
+  Future<void> login(
+      {required String userName, required String password}) async {
     loginStatus = RequestStatus.Loading;
     notifyListeners();
 
-    final result = await _login(email: email, password: password);
+    final result = await _login(userName: userName, password: password);
     result.fold(
       (failure) {
         loginStatus = RequestStatus.Fail;

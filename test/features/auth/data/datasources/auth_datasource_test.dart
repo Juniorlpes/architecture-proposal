@@ -31,7 +31,7 @@ class WebServiceMock implements RestService {
       String path, body, T Function(Map<String, dynamic> json) parse) async {
     if (path == 'api/login') {
       //real json web response simulation
-      return WebResponse<T>()..data = parse({'email': 'bento2@test.com'});
+      return WebResponse<T>()..data = parse({'userName': 'bento2@test.com'});
     }
     return WebResponse<T>()
       ..failure = GeneralAppFailure(message: 'Unimplemented');
@@ -44,10 +44,10 @@ void main() {
 
   group('AuthDatasource Tests', () {
     test('right case', () async {
-      final result =
-          await datasource.login(email: 'bento@test.com', password: '123456');
+      final result = await datasource.login(
+          userName: 'bento@test.com', password: '123456');
 
-      expect(result.email, 'bento2@test.com');
+      expect(result.userName, 'bento2@test.com');
     });
 
     test('error case', () async {

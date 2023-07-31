@@ -1,13 +1,11 @@
 import 'package:architecture_proposal/features/auth/domain/entities/enums/type_user.dart';
 
 class User {
-  String name;
-  String email;
+  String userName;
   TypeUser typeUser;
 
   User({
-    required this.name,
-    required this.email,
+    required this.userName,
     this.typeUser = TypeUser.Common,
   });
 
