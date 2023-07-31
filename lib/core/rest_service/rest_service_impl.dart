@@ -1,6 +1,7 @@
 import 'package:architecture_proposal/core/rest_service/rest_service.dart';
 import 'package:architecture_proposal/shared/entities/general_app_failure.dart';
 
+///A better example in real-world branch
 class RestServiceImpl implements RestService {
   //Dio dio.... (example external service)
 

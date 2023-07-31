@@ -43,8 +43,10 @@ Ex: environment config, global services abstration etc.
 The <strong>shared</strong> folder is for putting shared files for the whole project.</br>
 Ex: enums, entities, extentions, constants etc.
 
-The <strong>features/modules</strong> folder is for putting all the features of the project.</br>
-Each module will be divided into three other folders referring to the three layers shown above in the image.
+The <strong>features or modules</strong> folder is for putting all the features of the project.</br>
+<strong>Obs:</strong> Each module will be divided into three other folders referring to the three layers shown above in the image.
+
+## Layers
 
 The three layers are: <strong>domain</strong>, <strong>data</strong> and <strong>presenter</strong>.
 

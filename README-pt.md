@@ -41,8 +41,10 @@ Ex: configuração do ambiente, abstração de serviços globais etc.
 A pasta <strong>shared</strong> é para colocar arquivos compartilhados para todo o projeto.</br>
 Ex: enums, entidades, extensões, constantes etc.
 
-A pasta <strong>features/modules</strong> serve para colocar todas as features do projeto.</br>
-Cada módulo será dividido em outras três pastas referentes às três camadas mostradas acima na imagem.
+A pasta <strong>features ou modules</strong> serve para colocar todas as features do projeto.</br>
+<strong>Obs:</strong> Cada módulo será dividido em outras três pastas referentes às três camadas mostradas acima na imagem.
+
+## Camadas
 
 As três camadas são: <strong>domain</strong>, <strong>data</strong> e <strong>presenter</strong>.
 
