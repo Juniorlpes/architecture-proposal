@@ -10,17 +10,13 @@ environment:
 
 dependencies:
   dio: ^4.0.6
-  flutter_mobx: ^2.0.4
-  mobx: ^2.0.6+1
-  flutter_modular: ^4.5.0
+  flutter_modular: ^5.0.0
   dartz: ^0.10.1
   flutter:
     sdk: flutter
 
 dev_dependencies:
   mockito: ^5.1.0
-  mobx_codegen: ^2.0.5+2
-  build_runner: ^2.0.0
   flutter_test:
     sdk: flutter
 

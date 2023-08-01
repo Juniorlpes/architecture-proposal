@@ -3,7 +3,7 @@ import 'package:architecture_proposal/app/modules/auth/data/repositories/auth_re
 import 'package:architecture_proposal/app/modules/auth/domain/usecases/login.dart';
 import 'package:architecture_proposal/app/modules/auth/presenter/pages/auth_page.dart';
 
-import 'presenter/controllers/auth_controller.dart';
+import 'presenter/controllers/auth_store.dart';
 import 'package:flutter_modular/flutter_modular.dart';
 
 class AuthModule extends Module {
@@ -12,7 +12,7 @@ class AuthModule extends Module {
         Bind((i) => AuthDatasourceImpl(i())),
         Bind((i) => AuthRepositoryImpl(i())),
         Bind((i) => LoginImpl(i())),
-        Bind((i) => AuthController(i())),
+        Bind((i) => AuthStore(i())),
       ];
 
   @override
