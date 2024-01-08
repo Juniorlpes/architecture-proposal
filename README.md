@@ -8,10 +8,7 @@ It is a basic and continuous [flutter](https://flutter.dev) project to save and 
 
 Well, this proposal was based on [Reso Coder Proposal](https://resocoder.com/flutter-clean-architecture-tdd/) and [Flutterando proposal](https://github.com/Flutterando/Clean-Dart). I did some changes/improvements in both proposal considering some necessities, and of course, respecting the SOLID principles and the Clean Code.
 
-This project has two branchs. <br />
 The <strong>base-proposal</strong> branch is the clean proposal, it's just used only Dart/Flutter code without any external package, except the [dartz](https://pub.dev/packages/dartz) package that only provide useful dart classes. (see [Either](https://pub.dev/documentation/dartz/latest/dartz/Either-class.html) class)
-
-The <strong>real-world</strong> branch is a "real world branch" where I use some external packages to support our daily development work, highlighting the [flutter_modular](https://pub.dev/packages/flutter_modular) package that manages the app's routes and binds, separating the features into modules like the Angular framework (Javascript).
 
 ## Explain
 
@@ -59,3 +56,5 @@ All implementation, connection is done in this layer.
 I use the repository implementation to handle possible datasource errors.
 
 Finally, the <strong>presenter</strong> layer takes care of the view, widgets and presenter logic. It only knows the module's use cases.
+
+## You can see a real project example in my [Todo List App](https://github.com/Juniorlpes/todo-list-app).

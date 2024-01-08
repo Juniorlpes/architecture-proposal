@@ -6,10 +6,7 @@
 
 Bom, essa proposta foi baseada na [Proposta do Reso Coder](https://resocoder.com/flutter-clean-architecture-tdd/) e na [Proposta do Flutterando](https://github.com/Flutterando/Clean-Dart) . Fiz algumas alterações/melhorias em ambas as propostas considerando algumas necessidades, e claro, respeitando os princípios SOLID e o Clean Code.
 
-Este projeto tem duas ramificações. <br />
 A ramificação <strong>base-proposal</strong> é a proposta limpa, é usado apenas código Dart/Flutter sem nenhum pacote externo, exceto o pacote [dartz](https://pub.dev/packages/dartz) que fornecem apenas aulas de dardo úteis. (consulte a classe [Ou](https://pub.dev/documentation/dartz/latest/dartz/Either-class.html))
-
-A ramificação <strong>real-world</strong> é uma "ramificação do mundo real" onde utilizo alguns pacotes externos para dar suporte ao nosso trabalho diário de desenvolvimento, destacando o [flutter_modular](https://pub.dev/packages/flutter_modular) pacote que gerencia as rotas e ligações do app, separando as funcionalidades em módulos como o framework Angular (Javascript).
 
 ## Explicar
 
@@ -57,3 +54,5 @@ Toda implementação, conexão é feita nesta camada.
 Eu uso a implementação do repositório para lidar com possíveis erros de fonte de dados.
 
 Por fim, a camada <strong>presenter</strong> cuida da exibição, dos widgets e da lógica da view. Ele conhece apenas os casos de uso do módulo.
+
+## Voce pode ver um projeto real de exemplo no meu [Todo list App](https://github.com/Juniorlpes/todo-list-app)
