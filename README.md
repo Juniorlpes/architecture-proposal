@@ -8,7 +8,7 @@ It is a basic and continuous [flutter](https://flutter.dev) project to save and 
 
 Well, this proposal was based on [Reso Coder Proposal](https://resocoder.com/flutter-clean-architecture-tdd/) and [Flutterando proposal](https://github.com/Flutterando/Clean-Dart). I did some changes/improvements in both proposal considering some necessities, and of course, respecting the SOLID principles and the Clean Code.
 
-The <strong>base-proposal</strong> branch is the clean proposal, it's just used only Dart/Flutter code without any external package, except the [dartz](https://pub.dev/packages/dartz) package that only provide useful dart classes. (see [Either](https://pub.dev/documentation/dartz/latest/dartz/Either-class.html) class)
+You can see an example project with this architecture by clicking [here](https://github.com/Juniorlpes/todo-list-app).
 
 ## Explain
 

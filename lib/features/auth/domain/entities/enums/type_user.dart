@@ -1,1 +1,0 @@
-enum TypeUser { Admin, Common }

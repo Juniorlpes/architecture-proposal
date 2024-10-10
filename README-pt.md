@@ -6,7 +6,7 @@
 
 Bom, essa proposta foi baseada na [Proposta do Reso Coder](https://resocoder.com/flutter-clean-architecture-tdd/) e na [Proposta do Flutterando](https://github.com/Flutterando/Clean-Dart) . Fiz algumas alterações/melhorias em ambas as propostas considerando algumas necessidades, e claro, respeitando os princípios SOLID e o Clean Code.
 
-A ramificação <strong>base-proposal</strong> é a proposta limpa, é usado apenas código Dart/Flutter sem nenhum pacote externo, exceto o pacote [dartz](https://pub.dev/packages/dartz) que fornecem apenas aulas de dardo úteis. (consulte a classe [Ou](https://pub.dev/documentation/dartz/latest/dartz/Either-class.html))
+Você pode ver um projeto de exemplo com esta arquitetura clicando [aqui](https://github.com/Juniorlpes/todo-list-app).
 
 ## Explicar
 
